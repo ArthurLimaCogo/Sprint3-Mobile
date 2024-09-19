@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- O corpo da página começa aqui -->
+
+    <!-- Container para a logo do site -->
+    <div class="logo-container">
+      <!-- Exibe uma imagem que deve estar no diretório './fotos' -->
+      <img src="./fotos/magnus2.png" alt="Hudson Storytelling Logo" class="logo">  
+    </div>
+
+    <!-- Container principal que usa o Bootstrap para layout em tela cheia -->
+    <div class="container-fluid d-flex p-0">
+      <!-- Coluna que ocupa 7/12 da largura em telas grandes (classe col-lg-7) e fica oculta em telas menores (classe d-none d-lg-flex) -->
+      <div class="col-lg-7 d-none d-lg-flex align-items-center justify-content-center image-container">
+        <!-- Container para o texto exibido ao lado do formulário -->
+        <div class="text-container">
+          <!-- Texto HUDSON em parágrafo e o título STORYTELLING em H1 -->
+          <p>HUDSON</p>
+          <h1>STORYTELLING</h1>
+          <p>Gerador de apresentação</p>
+        </div>
+      </div>
+      
+      <!-- Coluna para o formulário de login que ocupa 5/12 da largura em telas grandes (col-lg-5) -->
+      <div class="col-lg-5 d-flex align-items-center justify-content-center form-container">
+        <!-- Container para o conteúdo do login -->
+        <div class="login-container">
+          <!-- Título da seção de login -->
+          <h2>Login</h2>
+
+          <!-- Formulário de login -->
+          <form>
+            <!-- Campo de email -->
+            <div class="form-group">
+              <label for="email">Email</label>
+              <!-- Campo de input para o email -->
+              <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+            </div>
+
+            <!-- Campo de senha -->
+            <div class="form-group">
+              <label for="password">Senha</label>
+              <!-- Campo de input para a senha -->
+              <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+            </div>
+
+            <!-- Link para a recuperação de senha -->
+            <div class="text-right">
+              <a href="#" class="forgot-password">Esqueci a senha</a>
+            </div>
+
+            <!-- Botão para submeter o formulário de login -->
+            <a href="./paginaPrincipal/gerador.html" class="btn btn-primary">Entrar</a>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Inclui o jQuery, uma biblioteca JavaScript popular para manipulação do DOM e animações -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    
+    <!-- Inclui o arquivo JavaScript do Bootstrap que controla os componentes dinâmicos -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.js"></script>
+
+  </body>
+</html>
